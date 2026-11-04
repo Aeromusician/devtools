@@ -2,6 +2,7 @@ package ru.mentee.power;
 
 public class ProgressDemo {
 	public static void main(String[] args) {
+		System.out.println("3649543 (HEAD -> feature/DVT-3, master)");
 		var progress = new MenteeProgress(
 				"Nikita Naumov",
 				1,
