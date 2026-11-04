@@ -15,4 +15,4 @@ ru.mentee.power - область видимости (namespace), которая 
 | `readyForSpring()` | Функция определения готовности к спринту, true если запланировано больше 3х часов | boolean |
 
 # Правило веток
-feature/DVT-X, где X номер задания
+from master feature/DVT-X, где X номер задания
