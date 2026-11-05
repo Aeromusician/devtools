@@ -21,3 +21,8 @@ from master feature/DVT-X, где X номер задания
 <pre>git status clean then git push</pre>
 # Удаленный репозиторий
 по SSH на git@github.com:Aeromusician/devtools.git
+
+# Сценарий ручной проверки DVT-6
+```bash
+./gradlew run    # Суммарно: пройдено 25 из 36 уроков, осталось 11 уроков
+./gradlew test   # BUILD SUCCESSFUL, все тесты зелёные (включая тесты на исключения)
