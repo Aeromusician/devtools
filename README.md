@@ -18,4 +18,4 @@ ru.mentee.power - область видимости (namespace), которая 
 from master feature/DVT-X, где X номер задания
 
 # Правило push
-git status clean then git push
+<pre>git status clean then git push</pre>
