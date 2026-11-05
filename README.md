@@ -17,5 +17,7 @@ ru.mentee.power - область видимости (namespace), которая 
 # Правило веток
 from master feature/DVT-X, где X номер задания
 
+# Правило push
+<pre>git status clean then git push</pre>
 # Удаленный репозиторий
 по SSH на git@github.com:Aeromusician/devtools.git

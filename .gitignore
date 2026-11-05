@@ -50,7 +50,9 @@ build/
 !gradle/wrapper/gradle-wrapper.properties
 
 # IntelliJ IDEA
-.idea/
+.idea/*
+!.idea/codeStyles/
+!.idea/codeStyles/**
 *.iml
 out/
 
