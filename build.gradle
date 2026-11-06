@@ -36,8 +36,6 @@ dependencies {
 }
 
 checkstyle {
-    // TODO: подставь актуальную стабильную версию с Maven Central
-    // https://search.maven.org/artifact/com.puppycrawl.tools/checkstyle
     toolVersion = '14.4.0'
     maxErrors = 0      // даже 1 ошибка (severity=error) → BUILD FAILED
     maxWarnings = 999  // предупреждения (severity=warning) не блокируют сборку
