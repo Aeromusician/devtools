@@ -26,3 +26,62 @@ from master feature/DVT-X, где X номер задания
 ```bash
 ./gradlew run    # Суммарно: пройдено 25 из 36 уроков, осталось 11 уроков
 ./gradlew test   # BUILD SUCCESSFUL, все тесты зелёные (включая тесты на исключения)
+```
+
+# Кодстайл-гайд DVT-7
+
+### 1. Именование классов: PascalCase
+
+До: `public class studentService { ... }`
+
+После: `public class StudentService { ... }`
+
+Источник: Google Java Style Guide — Naming
+
+### 2. Именование методов: camelCase
+
+До: `public List get_students() { ... }`
+
+После: `public List getStudents() { ... }`
+
+Источник: Google Java Style Guide — Naming
+
+### 3. Именование констант: SCREAMING_SNAKE_CASE
+
+До: `private static final int maxSize = 100;`
+
+После: `private static final int MAX_SIZE = 100;`
+
+Источник: Google Java Style Guide — Naming
+
+### 4. Отступы: 2 пробела вместо табуляции
+
+До:
+```java
+public void doSomething() {
+    System.out.println("Hello");
+}
+```
+
+После:
+```java
+public void doSomething() {
+  System.out.println("Hello");
+}
+```
+Источник: Checkstyle — Indentation, FileTabCharacter
+
+### 5. Именование пакетов: lowercase
+
+До: `package ru.mentee.Power;`
+
+После: `package ru.mentee.power;`
+
+Источник: Google Java Style Guide — Naming
+
+# DVT-7 runbook
+
+### запустил CheckStyle
+-> упало -> смотришь отчет checkstyle и правишь где нужно
+### запустил Jacoco
+-> не хватает покрытия -> смотришь отчет в build -> дописываешь тесты, где необходимо
