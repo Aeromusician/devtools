@@ -1,3 +1,5 @@
+[![Java CI](https://github.com/Aeromusician/devtools/actions/workflows/ci.yml/badge.svg)](https://github.com/Aeromusician/devtools/actions/workflows/ci.yml)
+
 # Quick start
 ./gradlew run - fast app run
 ./gradlew test - fast test run
