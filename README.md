@@ -533,3 +533,13 @@ mentees.length в условии — O(1), JIT это нормально опт�
 Сравнение:
 Оба ответа практически одинаковы по основным выводам. Второй ответ немного глубже раскрывает контракт
 метода и Java Conventions, при этом в нем есть несколько дополнительных замечаний.
+
+## Тесты ProgressTrackerTest DVT-13
+
+1. `shouldReturnCorrectAverageForRoundValues` — проверка среднего прогресса для круглых значений (50%).
+
+2. `shouldReturnCorrectAverageForNonRoundValues` — проверка среднего прогресса для некруглых значений с использованием `isCloseTo()` и `offset()`.
+
+3. `shouldThrowExceptionWhenMenteesArrayIsEmpty` — проверка выброса `IllegalArgumentException` при передаче пустого массива.
+
+4. `shouldReturnProgressWithinValidRange` — проверка нахождения результата в допустимом диапазоне (больше 0 и меньше или равно 100).
