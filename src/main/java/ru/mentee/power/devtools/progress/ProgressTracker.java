@@ -21,4 +21,24 @@ public class ProgressTracker {
     return resultMessage;
   }
 
+  /**
+   * Средний процент прохождения по всем mentee.
+   *
+   * @throws IllegalArgumentException если массив пуст
+   */
+  public double averageProgressPercent(Mentee[] mentees) {
+    if (mentees == null || mentees.length == 0) {
+      throw new IllegalArgumentException("Пустой список mentee");
+    }
+
+    double percentSum = 0;
+
+    for (Mentee mentee : mentees) {
+      double v = mentee.completedLessons() * 100.0 / mentee.totalLessons();
+      percentSum += v;
+    }
+
+    return percentSum / mentees.length;
+  }
+
 }
